@@ -1,0 +1,6 @@
+---
+chrome_architecture: "{% if ansible_architecture == 'x86_64' %}amd64{% else %}i386{% endif %}"
+chrome_url_ubuntu_deb: "https://dl.google.com/linux/direct/google-chrome-stable_{{chrome_version}}_{{chrome_architecture}}.deb"
+chrome_url_fedora_rpm: "https://dl.google.com/linux/direct/google-chrome-stable_{{chrome_version}}_{{chrome_architecture}}.rpm"
+
+chrome_fedora_max_releasever: 22

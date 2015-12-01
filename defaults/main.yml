@@ -1,0 +1,6 @@
+---
+# Package states: installed or latest
+chrome_version: "current"
+chrome_tmp_deb: "/tmp/google-chrome-stable_{{chrome_version}}.deb"
+chrome_tmp_rpm: "/tmp/google-chrome-stable_{{chrome_version}}.rpm"
+
