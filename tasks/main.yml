@@ -1,10 +1,11 @@
 ---
-- name: install dropbox for Ubuntu family
+
+- name: Install Chrome for Ubuntu family
   include: "Ubuntu.yml"
   when: ansible_distribution == 'Ubuntu'
-  tags: ["packages","dropbox"]
+  tags: [ "packages", "chrome" ]
 
-- name: install dropbox for Fedora family
+- name: Install Chrome for Fedora family
   include: "Fedora.yml"
   when: ansible_distribution == 'Fedora'
-  tags: ["packages","dropbox"]
+  tags: [ "packages", "chrome" ]
