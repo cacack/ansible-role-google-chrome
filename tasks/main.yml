@@ -1,11 +1,11 @@
 ---
 
 - name: Install Chrome for Ubuntu family
-  include: "Ubuntu.yml"
+  include: "ubuntu.yml"
   when: ansible_distribution == 'Ubuntu'
   tags: [ "packages", "chrome" ]
 
 - name: Install Chrome for Fedora family
-  include: "Fedora.yml"
+  include: "fedora.yml"
   when: ansible_distribution == 'Fedora'
   tags: [ "packages", "chrome" ]

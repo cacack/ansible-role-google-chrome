@@ -1,0 +1,10 @@
+---
+- name: Check if Chrome is already installed
+  stat:
+    path: /usr/bin/google-chrome
+  register: chrome_binary
+
+- name: Install Google Chrome rpm
+  dnf: name={{ chrome_url_fedora_rpm }} state=present
+  sudo: yes
+  when: not chrome_binary.stat.exists
